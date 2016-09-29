@@ -18,5 +18,13 @@ module.exports = {
 	*/
 	plugins: [
     	new webpack.HotModuleReplacementPlugin()
-    ]
+    ], 
+    /**
+	 * 配置react，就需要配置module
+     */
+    module : {
+    	loaders:[
+    		{test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react'}
+    	]
+    }
 }

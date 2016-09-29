@@ -31,3 +31,7 @@ demo-1:实现以下功能
             new webpack.HotModuleReplacementPlugin()
         ]
     }
+
+demo-2:实现以下功能
+
+1. 配置react，
