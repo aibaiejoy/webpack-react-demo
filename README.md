@@ -26,6 +26,8 @@ demo-1:实现以下功能
             1. 需要配置此插件，
             2. 启动脚本也要加 --hot
             3. entry 配置
+                'webpack/hot/dev-server', 
+                'webpack-dev-server/client?http://localhost:8080', 
         */
         plugins: [
             new webpack.HotModuleReplacementPlugin()
@@ -33,3 +35,10 @@ demo-1:实现以下功能
     }
 
 demo-2: 实现以下功能
+
+实现两个js文件，使用cmd规范
+入口文件main.js
+组件文件component.js
+
+
+
