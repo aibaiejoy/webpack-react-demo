@@ -40,5 +40,9 @@ demo-2: 实现以下功能
 入口文件main.js
 组件文件component.js
 
+demo-3:
+
+配置react，以及es6；import语法实现；
+
 
 
