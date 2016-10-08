@@ -5,8 +5,3 @@ var Component = React.createClass({
 		return <h1>hello world</h1>
 	}
 })
-
-
-export default Component;
-
-//module.exprots = Component;
