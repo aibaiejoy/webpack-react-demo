@@ -42,7 +42,60 @@ demo-2: 实现以下功能
 
 demo-3:
 
-配置react，以及es6；import语法实现；
+配置react，以及babel转换es6；import语法实现；
 
+### 安装react
 
+package.json
+    
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+
+配置babel以及转换es6
+
+package.json
+
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "~6.0.15",
+
+命令行
+    
+    npm install --save
+
+我们创建两个文件来实践一下
+[react文档](http://reactjs.cn/react/docs/getting-started-zh-CN.html)
+main.js
+
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import Hello from './component.js';
+
+    ReactDOM.render(<Hello/>, document.getElementById("app"));
+
+component.js
+
+    import React from 'react';
+
+    class Hello extends React.Component {
+        constructor(props) {
+            super(props);
+            this.displayName = 'Hello';
+        }
+        render() {
+            return <div>Hello</div>;
+        }
+    }
+
+    export default Hello;
+
+webpack.config.js
+    
+    //配置loaders
+    module: {
+        loaders:[
+            { test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react'}
+        ]
+    }
 
