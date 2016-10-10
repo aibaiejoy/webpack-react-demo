@@ -113,7 +113,7 @@ demo-4 实现以下功能
 
 main.js 一个简单例子实现redux管理state；
 
-demo-5 实现一个todoMvc实例
+demo-5 使用react实现一个todoMvc实例
 
 有几个新方法要理解。
 action:一个字面量对象{type:''},包含一个type必选字段；
