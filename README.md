@@ -99,3 +99,16 @@ webpack.config.js
         ]
     }
 
+demo-4 实现以下功能
+(参考文档)[http://cn.redux.js.org/index.html]
+使用redux管理state
+
+安装
+
+    npm install --save redux
+    多数情况下，你还需要使用 React 绑定库和开发者工具。
+
+    npm install --save react-redux
+    npm install --save-dev redux-devtools
+
+main.js 一个简单例子实现redux管理state；
