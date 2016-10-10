@@ -7,7 +7,6 @@ class AddTodo extends React.Component {
         this.displayName = 'AddTodo';
     }
     render() {
-    	var self = this;
         return (
         	<div>
         		<input type="text" ref="input"/>
