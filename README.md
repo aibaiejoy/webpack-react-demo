@@ -112,3 +112,15 @@ demo-4 实现以下功能
     npm install --save-dev redux-devtools
 
 main.js 一个简单例子实现redux管理state；
+
+demo-5 实现一个todoMvc实例
+
+有几个新方法要理解。
+action:一个字面量对象{type:''},包含一个type必选字段；
+action创建函数：返回一个action
+
+reducer：一个接受旧的state，返回新的state的函数；
+redux.combineReduces 合并多个reduces，返回一个新的state；
+
+store：存储state数据；
+redux.createStore(action|action创建函数);
